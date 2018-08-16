@@ -38,7 +38,7 @@ public class ConnKeywords {
 	public void insertKeywords(String keyword) {
 		con();
 		try {
-			String fileName = "Keyword\\" + keyword + ".txt";
+			String fileName = "Keywords\\" + keyword + ".txt";
 			Path filepath = Paths.get(fileName);
 			List<String> key = Files.readAllLines(filepath);
 			System.out.println(key.get(0));
