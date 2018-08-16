@@ -26,6 +26,7 @@ public class SearchService {
 	}
 	
 	public void searchUrl(String url) {
+//		System.setProperty("webdriver.chrome.driver", "lib/chromedriver.exe");		// Only for Windows
 		driver = new ChromeDriver();
 		driver.get(url);
 	}
